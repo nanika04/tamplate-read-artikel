@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-quiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="page">
+
+        <span class="menu_toggle">
+          <i class="menu_open fa fa-bars fa-lg"></i>
+          <i class="menu_close fa fa-times fa-lg"></i>
+        </span>
+        <ul class="menu_items">
+          <li> <a href="#">Tutorial</a> </li>
+          <li> <a href="#">HOME</a> </li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Contact</a> </li>
+
+        </ul>
+
+        <main class="content">
+          <div class="content_inner">
+              <h1>Linux vs Unix: Apa Perbedaannya?</h1>
+              <p>Jika pembaca adalah developer yang berumur sekitar 20 sampai 30 tahunan, pembaca hidup di jaman yang didominasi oleh Linux. Linux telah menjadi pemain besar di data center selama beberapa dekade. Meskipun sulit untuk mencari data market share sistem operasi yang paling akurat, Linux menguasai data center dengan persentase bisa mencapai 70% dimana sisanya diambil oleh berbagai varian Windows. Developer yang menggunakan sistem cloud publik yang besar bisa dipastikan akan memiliki sistem yang menjalankan Linux. Bukti bahwa Linux ada dimana-mana juga bisa ditemukan dengan sangat mudah saat ini seperti yang ada di Android perangkat telepon pintar denagn sistem berbasis Linux, TV, mobil, dan perangkat-perangkat lainnya. </p>
+              <p>
+                  Meski begitu, sebagian besar software developers, bahkan developer yang tumbuh dimasa Linux merajalela pernah mendengar nama Unix. Namanya mirip dengan Linux sehingga terkadang kita bisa mendengar orang menggunakan dua nama itu untuk merujuk kesebuah teknologi yang sama. Atau mungkin, pembaca pernah juga mendengar bahwa Linux merupakan sistem operasi yang "Unix-like" alias seperti Unix.
+              </p>
+          </div>
+        </main>
+    </div>
+
+<script type="text/javascript">
+
+    var $page = $('.page');
+
+    $('.menu_toggle').on('click', function() {
+      $page.toggleClass('shazam');
+    });
+
+    $('.content').on('click', function(){
+      $page.removeClass('shazam');
+    });
+
+</script>
+
+  </body>
+</html>
